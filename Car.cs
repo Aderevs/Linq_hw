@@ -9,9 +9,9 @@ namespace Linq_hw
 {
     internal class Car
     {
-        public Car(string brand, string model, int maufactureYear)
+        public Car(string brand, string model, int maufactureYear, CarColor color)
         {
-            Colour = CarColour.White; //Let's assume that most of the cars at bus stations are white
+            Color = color;
             Brand = brand;
             Model = model;
             if (maufactureYear >= 1894)
@@ -26,9 +26,9 @@ namespace Linq_hw
         public string Brand { get; }
         public string Model { get; }
         public int ManufactureYear { get; }
-        public CarColour Colour { get; set; }
+        public CarColor Color { get; set; }
 
-        public enum CarColour
+        public enum CarColor
         {
             White,
             Black,
