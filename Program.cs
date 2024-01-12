@@ -10,7 +10,8 @@ namespace Linq_hw
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Car car = new Car();
+
         }
     }
 }
