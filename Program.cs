@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Linq_hw
 {
@@ -10,8 +7,7 @@ namespace Linq_hw
     {
         private static void Main(string[] args)
         {
-            Car car = new Car();
-
+            Customer customer = new Customer("yura", "0959353169", "leaf");
         }
     }
 }
