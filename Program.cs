@@ -50,13 +50,24 @@ namespace Linq_hw
                     "\nCar: " + item.carBrand + " " + item.carModel + "\tYear of manufacture:" + item.carManufactureYear + "\tColor of car: " + item.carColor);
             }
         }
+        static void Task5Test()
+        {
+            Console.WriteLine("enter your X:");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter your Y:");
+            int y = int.Parse(Console.ReadLine());
+            Console.WriteLine($"{x} + {y} = {Calculator.Add(x, y)}");
+            Console.WriteLine($"{x} - {y} = {Calculator.Sub(x, y)}");
+            Console.WriteLine($"{x} * {y} = {Calculator.Mul(x, y)}");
+            Console.WriteLine($"{x} +  {y}  =  {Calculator.Div(x, y)}");
+        }
 
         private static void Main(string[] args)
         { 
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("Choose task: \n1. Task#2; \n2. Task#3");
+                Console.WriteLine("Choose task: \n1. Task #2; \n2. Task #3; \n3. Task #5");
                 int choise = int.Parse(Console.ReadLine());
                 switch (choise)
                 {
@@ -65,6 +76,9 @@ namespace Linq_hw
                         break;
                     case 2:
                         new Vocabulary();
+                        break;
+                    case 3:
+                        Task5Test();
                         break;
                     case -1:
                         exit = true;
