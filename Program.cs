@@ -50,6 +50,7 @@ namespace Linq_hw
                     "\nCar: " + item.carBrand + " " + item.carModel + "\tYear of manufacture:" + item.carManufactureYear + "\tColor of car: " + item.carColor);
             }
         }
+        
         private static void Main(string[] args)
         {
             Task2Test();
