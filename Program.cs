@@ -50,10 +50,31 @@ namespace Linq_hw
                     "\nCar: " + item.carBrand + " " + item.carModel + "\tYear of manufacture:" + item.carManufactureYear + "\tColor of car: " + item.carColor);
             }
         }
-        
+
         private static void Main(string[] args)
-        {
-            Task2Test();
+        { 
+            bool exit = false;
+            while (!exit)
+            {
+                Console.WriteLine("Choose task: \n1. Task#2; \n2. Task#3");
+                int choise = int.Parse(Console.ReadLine());
+                switch (choise)
+                {
+                    case 1:
+                        Task2Test();
+                        break;
+                    case 2:
+                        new Vocabulary();
+                        break;
+                    case -1:
+                        exit = true;
+                        break;
+                    default:
+                        Console.WriteLine("There is no such option :(");
+                        break;
+                }
+                Console.WriteLine(new string('-', 75) + new string('\n', 10));
+            }
         }
     }
 }
